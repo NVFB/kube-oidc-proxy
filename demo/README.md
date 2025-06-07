@@ -9,13 +9,13 @@ separate providers (Google, Amazon and Digitalocean), deploying:
 - [Gangway](https://github.com/heptiolabs/gangway) web server to authenticate
   users to Dex and help generate Kubeconfig files.
 
-- [kube-oidc-proxy](https://github.com/jetstack/kube-oidc-proxy) to expose all
+- [kube-oidc-proxy](https://github.com/TremoloSecurity/kube-oidc-proxy) to expose all
   clusters to OIDC authentication.
 
 - [Contour](https://github.com/heptio/contour) as the ingress controller with
   TLS SNI passthrough enabled.
 
-- [Cert-Manager](https://github.com/jetstack/cert-manager) to issue and manage
+- [Cert-Manager](https://github.com/TremoloSecurity/cert-manager) to issue and manage
   certificates.
 
 It will also demonstrate how to enable different authentication methods that Dex

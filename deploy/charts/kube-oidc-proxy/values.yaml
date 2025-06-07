@@ -57,35 +57,39 @@ oidc:
   requiredClaims: {}
 
 # To enable token passthrough feature
-# https://github.com/jetstack/kube-oidc-proxy/blob/master/docs/tasks/token-passthrough.md
+# https://github.com/TremoloSecurity/kube-oidc-proxy/blob/master/docs/tasks/token-passthrough.md
 tokenPassthrough:
   enabled: false
   audiences: []
 
 # To add extra impersonation headers
-# https://github.com/jetstack/kube-oidc-proxy/blob/master/docs/tasks/extra-impersonation-headers.md
+# https://github.com/TremoloSecurity/kube-oidc-proxy/blob/master/docs/tasks/extra-impersonation-headers.md
 extraImpersonationHeaders:
   clientIP: false
   #headers: key1=foo,key2=bar,key1=bar
 
-extraArgs: {}
+extraArgs:
+  {}
   #audit-log-path: /audit-log
   #audit-policy-file: /audit/audit.yaml
 
-extraVolumeMounts: {}
+extraVolumeMounts:
+  {}
   #- name: audit
   #  mountPath: /audit
   #  readOnly: true
 
-extraVolumes: {}
+extraVolumes:
+  {}
   #- configMap:
-      #defaultMode: 420
-      #name: kube-oidc-proxy-policy
-    #name: audit
+  #defaultMode: 420
+  #name: kube-oidc-proxy-policy
+  #name: audit
 
 ingress:
   enabled: false
-  annotations: {}
+  annotations:
+    {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
@@ -111,7 +115,8 @@ podDisruptionBudget:
   enabled: false
   minAvailable: 1
 
-resources: {}
+resources:
+  {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
