@@ -12,10 +12,10 @@ import (
 	"k8s.io/client-go/transport"
 	"k8s.io/klog/v2"
 
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy/audit"
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy/context"
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy/logging"
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy/subjectaccessreview"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy/audit"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy/context"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy/logging"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy/subjectaccessreview"
 )
 
 func (p *Proxy) withHandlers(handler http.Handler) http.Handler {

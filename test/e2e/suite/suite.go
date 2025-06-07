@@ -7,8 +7,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/jetstack/kube-oidc-proxy/test/e2e/framework"
-	"github.com/jetstack/kube-oidc-proxy/test/environment"
+	"github.com/TremoloSecurity/kube-oidc-proxy/test/e2e/framework"
+	"github.com/TremoloSecurity/kube-oidc-proxy/test/environment"
 )
 
 var (

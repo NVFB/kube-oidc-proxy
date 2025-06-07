@@ -9,12 +9,12 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	"github.com/jetstack/kube-oidc-proxy/cmd/app/options"
-	"github.com/jetstack/kube-oidc-proxy/pkg/probe"
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy"
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy/subjectaccessreview"
-	"github.com/jetstack/kube-oidc-proxy/pkg/proxy/tokenreview"
-	"github.com/jetstack/kube-oidc-proxy/pkg/util"
+	"github.com/TremoloSecurity/kube-oidc-proxy/cmd/app/options"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/probe"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy/subjectaccessreview"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/proxy/tokenreview"
+	"github.com/TremoloSecurity/kube-oidc-proxy/pkg/util"
 )
 
 func NewRunCommand(stopCh <-chan struct{}) *cobra.Command {

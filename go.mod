@@ -1,4 +1,4 @@
-module github.com/jetstack/kube-oidc-proxy
+module github.com/TremoloSecurity/kube-oidc-proxy
 
 go 1.23.0
 
@@ -30,6 +30,7 @@ replace (
 	golang.org/x/crypto => golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 
 	gopkg.in/yaml.v3 => gopkg.in/yaml.v3 v3.0.1
+// github.com/TremoloSecurity/kube-oidc-proxy => . // replace with local repo
 )
 
 require (

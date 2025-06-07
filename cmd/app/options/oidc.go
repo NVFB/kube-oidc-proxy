@@ -12,6 +12,7 @@ import (
 type OIDCAuthenticationOptions struct {
 	CAFile         string
 	ClientID       string
+	SecretID       string
 	IssuerURL      string
 	UsernameClaim  string
 	UsernamePrefix string
@@ -39,6 +40,9 @@ func (o *OIDCAuthenticationOptions) AddFlags(fs *pflag.FlagSet) *OIDCAuthenticat
 
 	fs.StringVar(&o.ClientID, "oidc-client-id", o.ClientID,
 		"The client ID for the OpenID Connect client.")
+
+	fs.StringVar(&o.SecretID, "oidc-secret-id", o.SecretID, ""+
+		"The secret ID for the OpenID Connect client.")
 
 	fs.StringVar(&o.CAFile, "oidc-ca-file", o.CAFile, ""+
 		"The OpenID server's certificate will be verified by one of the authorities "+
